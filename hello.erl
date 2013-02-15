@@ -15,7 +15,7 @@ loop(Sock) ->
   loop(Sock).
 
 handle(Conn) ->
-	case File = file:read_file("index.html") of
+	case file:read_file("index.html") of
 		{ok, FileContents} ->
 		  gen_tcp:send(Conn, response(FileContents)),
 		  gen_tcp:close(Conn);
