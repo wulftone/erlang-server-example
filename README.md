@@ -17,7 +17,7 @@ Based on [this post](http://stackoverflow.com/questions/2206933/how-to-write-a-s
     Eshell V5.9.2  (abort with ^G)
     1> c(hello).
     {ok,hello}
-    2> Pid = hello:start(9000).
+    2> Pid = hello:start(9000). % Starts the server, browse to http://localhost:9000
     <0.39.0>
     3> exit(Pid,ok).
     true
